@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Article Preview Component</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <article class="card">
+        <div class="card-image">
+          <img src="images/drawers.jpg" alt="A green dresser with decoration" />
+        </div>
+        <div class="card-content">
+          <h1 class="card-title">
+            Shift the overall look and feel by adding these wonderful touches to
+            furniture in your home
+          </h1>
+          <p class="card-description">
+            Ever been in a room and felt like something was missing? Perhaps it
+            felt slightly bare and uninviting. I've got some simple tips to help
+            you make any room feel complete.
+          </p>
+          <footer class="card-footer">
+            <div class="author-info" id="author-info">
+              <img
+                src="images/avatar-michelle.jpg"
+                alt="Michelle Appleton"
+                class="author-avatar"
+              />
+              <div>
+                <p class="author-name">Michelle Appleton</p>
+                <p class="author-date">28 Jun 2020</p>
+              </div>
+            </div>
+            <button
+              class="share-toggle"
+              id="share-toggle"
+              aria-expanded="false"
+              aria-controls="share-menu"
+              aria-label="Share article"
+            >
+              <img src="images/icon-share.svg" alt="Share Icon" />
+            </button>
+          </footer>
+          <div
+            class="share-menu"
+            id="share-menu"
+            role="region"
+            aria-label="Social share links"
+            hidden
+          >
+            <span>Share</span>
+            <a href="#" aria-label="Share on Facebook"
+              ><img src="images/icon-facebook.svg" alt=""
+            /></a>
+            <a href="#" aria-label="Share on Twitter"
+              ><img src="images/icon-twitter.svg" alt=""
+            /></a>
+            <a href="#" aria-label="Share on Pinterest"
+              ><img src="images/icon-pinterest.svg" alt=""
+            /></a>
+          </div>
+        </div>
+      </article>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

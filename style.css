@@ -1,0 +1,147 @@
+/* Reset and base styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: 'Verdana', sans-serif;
+    background-color: hsl(210, 46%, 95%);
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .card {
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    max-width: 730px;
+    overflow: hidden;
+    flex-direction: row;
+
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+  
+  .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .card-image {
+    width: 40%;
+  }
+  
+  .card-content {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+    position: relative;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    color: hsl(217, 19%, 35%);
+    margin-bottom: 1rem;
+  }
+  .card-description {
+    font-size: 0.95rem;
+    color: hsl(214, 17%, 51%);
+    margin-bottom: 1.5rem;
+  }
+  
+  .card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .author-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .author-avatar {
+    width: 40px;
+    border-radius: 50%;
+  }
+  
+  .author-name {
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+  
+  .author-date {
+    font-size: 0.8rem;
+    color: hsl(214, 17%, 51%);
+  }
+  
+  .share-toggle {
+    background-color: hsl(210, 46%, 95%);
+    border: none;
+    border-radius: 50%;
+    padding: 0.6rem;
+    cursor: pointer;
+  }
+  
+  .share-toggle:hover {
+    background-color: hsl(214, 17%, 65%);
+  }
+  .share-menu:not([hidden]) {
+    display: flex;
+  }
+  
+  
+  /* Share menu */
+  .share-menu {
+    position: absolute;
+    bottom: 80px;
+    right: 2rem;
+    background-color: hsl(217, 19%, 35%);
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    
+    gap: 1rem;
+    align-items: center;
+  }
+
+
+  
+  .share-menu span {
+    letter-spacing: 4px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: hsl(212, 23%, 69%);
+  }
+  
+  .share-menu a img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      flex-direction: column;
+    }
+    .card-image {
+      width: 100%;
+      height: 200px;
+    }
+    .card-content {
+      width: 100%;
+      padding: 1.5rem;
+    }
+    .share-menu {
+      position: static;
+      margin-top: 1rem;
+      justify-content: space-around;
+    }
+  }
+  
